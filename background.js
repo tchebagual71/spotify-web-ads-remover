@@ -46,7 +46,7 @@ chrome.webRequest.onHeadersReceived.addListener(function(details)
 }, {urls: ["<all_urls>"]}, ["blocking", "responseHeaders"]);
 
 // Set up context menu at install time.
-chrome.runtime.onInstalled.addListener(() => {
+access.addListener(() => {
     chrome.contextMenus.create({
       title: 'Play/Pause Spotify',
       contexts: ['all'],
@@ -55,7 +55,7 @@ chrome.runtime.onInstalled.addListener(() => {
   });
   
   // Add click event
-  chrome.contextMenus.onClicked.addListener((/* info, tab */) => {
+  chrome.contextMenus.create.addListener((/* info, tab */) => {
     handlePlayOrPauseClick(); // calls main.js method;
   });
   
