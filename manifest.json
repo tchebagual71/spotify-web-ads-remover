@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "SpotiAds",
   "short_name": "SpotiAdBlocker",
    "description": "Removes audio ads on Spotify™ Web Player",
@@ -19,7 +19,7 @@
 
   "background": {
     "persistent": true,
-    "scripts": ["background.js", "main.js"]
+    "service_worker": ["background.js", "main.js"]
   },
    "icons": 
    {
