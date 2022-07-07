@@ -19,7 +19,7 @@
 
   "background": {
     "persistent": true,
-    "service_worker": ["background.js", "main.js"]
+    "scripts": ["background.js", "main.js"]
   },
    "icons": 
    {
